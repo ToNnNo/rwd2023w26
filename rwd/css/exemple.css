@@ -1,0 +1,35 @@
+/* < 576px (mobile) */
+
+.change-bg-color {
+    background-color: var(--color-orange);
+}
+
+/* >= 576px (mobile) */
+@media (min-width: 576px) {
+    .change-bg-color {
+        background-color: var(--color-purple);
+        color: var(--color-white);
+    }
+}
+
+/* >= 768px (tablette) */
+@media (min-width: 768px) {
+    .change-bg-color {
+        background-color: var(--color-red);
+    }
+}
+
+/* >= 992px (desktop) */
+@media (min-width: 992px) {
+    .change-bg-color {
+        background-color: var(--color-pink);
+    }
+}
+
+/* >= 1200px (large desktop) */
+@media (min-width: 1200px) {
+    .change-bg-color {
+        background-color: var(--color-white);
+        color: var(--base-text-color);
+    }
+}

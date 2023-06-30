@@ -1,0 +1,24 @@
+:root {
+    /* Points de rupture */
+    --sm: 576px;
+    --md: 768px;
+    --lg: 992px;
+    --xl: 1200px;
+    --xxl: 1400px;
+
+    /* Couleurs du site */
+    --color-purple: #8B1874;
+    --color-pink: #B71375;
+    --color-red: #FC4F00;
+    --color-orange: #F79540;
+    --color-black: #333;
+    --color-white: #fff;
+    
+    /* Variable des textes et des liens */
+    --base-text-color: var(--color-black);
+    --link-color: var(--color-purple);
+    --link-color-hover: var(--color-pink);
+
+    /* Variable des tableaux */
+    --table-border-color: #ddd;
+}

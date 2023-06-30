@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Responsive Web Design</h1>
+        </header>
+
+        <section>
+            <h2>Les Points Ruptures</h2>
+            
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>xs</th>
+                            <th>sm</th>
+                            <th>md</th>
+                            <th>lg</th>
+                            <th>xl</th>
+                            <th>xxl</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                &lt; 576px
+                            </td>
+                            <td>
+                                &gt;= 576px & &lt; 768px
+                            </td>
+                            <td>
+                                &gt;= 768px & &lt; 992px
+                            </td>
+                            <td>
+                                &gt;= 992px & &lt; 1200px
+                            </td>
+                            <td>
+                                &gt;= 1200px & &lt; 1400px
+                            </td>
+                            <td>
+                                &gt;= 1400px
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Mobile First</h2>
+            <p>Créer le css pour les plus petits supports en première et les grands en dernière</p>
+
+            <h2>Media Query</h2>
+            <pre>@media screen and ( [max-width ou min-width]: dimension ) { ... } </pre>
+            
+            <p>Quand on travaille en mobile first, il est de bonne pratique d'utiliser la prorpiété <b>min-width</b></p>
+        </section>
+
+        <section class="change-bg-color">
+            <h2>Exemple d'utilisation des media query</h2>
+
+            <p>La couleur de fond change en fonction de la taille</p>
+
+        </section>
+
+        <section>
+            <h2>Vidéo</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <video controls>
+                        <source src="videos/chat.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="col-md-6">
+                    <div class="iframe-responsive">
+                        <iframe src="https://www.youtube.com/embed/akciWdON_60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="col-md-6 col-xl-4">
+                <h3>Evoli</h3>
+                <img src="images/evoli.jpg" alt="" class="img-responsive" />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dolore quis in fugit vero minima animi corporis optio repellendus assumenda qui alias asperiores doloribus eos, ea fugiat sint! Porro, recusandae?</p>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <h3>Pikachu</h3>
+                <img src="images/pikachu.jpg" alt="" class="img-responsive" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, repellat. Cumque aperiam explicabo sequi itaque voluptatibus nemo architecto temporibus ad, delectus sed provident voluptates saepe! Aliquam amet eaque eveniet officia.</p>
+            </div>
+
+            <div class="col-xl-4">
+                <h3>Ronflex</h3>
+                <img src="images/ronflex.png" alt="" class="img-responsive" />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quam facilis laborum. Culpa, sequi optio officiis doloribus eligendi sapiente veniam quae ratione hic unde exercitationem, qui voluptates neque quaerat! Eum.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Flex problème de taille !</h2>
+
+            <div style="display: flex; flex-wrap: wrap;">
+                <div style="padding: 10px; border: 1px solid #ddd">
+                    1er balise</div>
+                <div style="padding: 10px; border: 1px solid #ddd">
+                    2nd balise</div>
+                <div style="border: 1px solid #ddd; width: 100%">
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <h4>Liens Utiles</h4>
+            <ul>
+                <li>
+                    <a href="https://alexandre.alapetite.fr/doc-alex/alx_special.html" target="_blank">
+                        Entité HTML</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

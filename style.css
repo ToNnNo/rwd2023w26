@@ -1,0 +1,34 @@
+:root {
+    --main-color: #F23827; /* RR VV BB AA 0 -> F */ 
+    --secondary-color: #F29422;
+    --white: #fff;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+a.evitement {
+    transform: translateX(-100%);
+    transition: transform 500ms;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 9999;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    display: block;
+    border-radius: 0 0 5px 5px;
+}
+
+a:focus.evitement {
+    transform: translateX(0);
+    left: 8px;
+}
+
+/* Hexa:    0 1 2 3 4 5 6 7 8 9 A  B  C  D  E  F */
+/* Base10:  0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 */

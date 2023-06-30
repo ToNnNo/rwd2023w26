@@ -1,0 +1,25 @@
+.img-responsive, video {
+    max-width: 100%;
+    height: auto;
+    /** 
+     * max-width: 100% et height: auto permet de garder 
+     * les proportions de l'image
+     *
+     * max-width permet d'afficher l'image (en largeur) à sa taille réelle
+     * jamais plus grande !
+     */
+}
+
+.iframe-responsive {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* format 16:9; 56.25 = 9 / 16 * 100 */
+}
+
+.iframe-responsive > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

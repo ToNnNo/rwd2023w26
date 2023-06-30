@@ -1,0 +1,16 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table > thead th,
+.table > tbody td {
+    text-align: left;
+    border-bottom: 1px solid var(--table-border-color);
+    padding: 7px 10px;
+}
+
+.table-responsive {
+    max-width: 100%;
+    overflow-x: scroll;
+}
